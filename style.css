@@ -63,3 +63,23 @@ h1,p{
     letter-spacing: 2px;
     margin-top: 10px;
 }
+#b-1{
+    color: black;
+}
+.book-1{
+    width: 100%;
+    padding: 10px;
+    box-shadow: 3px 4px 5px black ;
+}
+@media screen and (max-width: 600px) {
+   .introduction{
+    font-size: 25px;
+   }
+   .navbar a{
+    padding-inline: 5px;
+    font-size: small;
+   }
+   .navbar input{
+    width: 1.5cm;
+   }
+  }
