@@ -6,6 +6,9 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+html{
+    scroll-behavior: smooth;    
+}
 header{
     display: flex;
     justify-content: space-between;
@@ -141,6 +144,9 @@ footer{
 footer a{
     text-decoration: none;
     color: white;
+}
+footer a:hover{
+     color: rgb(66, 66, 223);
 }
 .links{
     display: flex;
