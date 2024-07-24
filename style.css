@@ -44,7 +44,7 @@ main{
     font-size: 30px; 
     color: white;   
 }
-h1,p{
+h1,.int-1{
     color: rgb(255, 255, 255, .8);
 }
 #button{
@@ -119,12 +119,55 @@ fieldset{
     padding: 10px;
     width: 90%;
     margin-bottom: 10px;
+    border-radius: 100px;
+    border: 1.5px solid black;
+    font-weight: 600;
+}
+.buy:hover{
+    background-color: gray;
+}
+#P-1{
+    padding: 30px;
+    color: white;
+    text-align: center;
+    font-weight: 500;
+}
+footer{
+    color: white;
+    background-color: black;
+    padding-top: 40px;
+    margin-top: 50px;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+.links{
+    display: flex;
+    justify-content:center;      
+}
+.lo{
+    font-size: 60px;
+    margin-right: 300px;
+    font-weight: bold; 
+    color: rgb(255, 255, 255, .6);
+}
+.about{
+    margin-right: 80px;    
+}
+.help{
+    margin-bottom: 30px;
+}
+.s-m {
+    margin-left: 80px;
+}
+#h-1,#S-M,#A-u{
+    color: yellow;
 }
 @keyframes fade-in{
     from{ scale: 0.8; opacity: 0;}
     to{scale: 1;opacity: 1;}
 }
-
 @media screen and (max-width: 800px) {
    .introduction{
     font-size: 25px;
