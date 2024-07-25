@@ -1,10 +1,15 @@
 <!DOCTYPE html>
-<html >
+<html  oncontextmenu="return false" ondragstart="return false"> 
 <head>
     <title>On.Books.com</title>
     <link rel="stylesheet" href="./style.css">
+    <script type="text/javascript">
+        document.onkeydown = function (e) {
+            return false;
+        }
+    </script>
 </head>
-<body  oncontextmenu="return false">
+<body  >
     <header>
         <div class="navigation">
             <h2>On.Books</h2>
@@ -125,5 +130,8 @@
             <pre><p id="P-1">Privacy Policy  |  Term & Condition  |  On.book is a registered trademark</p></pre>
         </div>
     </footer>
+    <script>
+       
+    </script>
 </body>
 </html>
