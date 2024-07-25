@@ -131,7 +131,7 @@ fieldset{
 }
 #P-1{
     padding: 30px;
-    color: white;
+    color: rgb(255, 255, 255);
     text-align: center;
     font-weight: 500;
 }
@@ -154,18 +154,18 @@ footer a:hover{
 }
 .lo{
     font-size: 60px;
-    margin-right: 300px;
+    margin-right: 290px;
     font-weight: bold; 
     color: rgb(255, 255, 255, .6);
 }
 .about{
-    margin-right: 80px;    
+    margin-right: 40px;    
 }
 .help{
     margin-bottom: 30px;
 }
 .s-m {
-    margin-left: 80px;
+    margin-left: 30px;
 }
 #h-1,#S-M,#A-u{
     color: yellow;
@@ -220,6 +220,26 @@ footer a:hover{
     }
    fieldset{
     width: 0px;
-    
+    }
+    .lo{
+        font-size: 40px;
+        margin-right: 50px;
+        font-weight: bold; 
+        color: rgb(255, 255, 255, .6);
+    }
+    .about{
+        margin-right: 30px;    
+    }
+    .help{
+        margin-bottom: 30px;
+    }
+    .s-m {
+        margin-left: 10px;
+    }
+    .P-1{
+        padding: -10px;
+    }
+    .b-4,.b-7{
+        height: 270px;
     }
   }
