@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
+
 *{
     padding: 0;
     margin: 0;
@@ -7,7 +8,8 @@
     font-family: 'Poppins', sans-serif;
 }
 html{
-    scroll-behavior: smooth;    
+    scroll-behavior: smooth;
+       
 }
 header{
     display: flex;
@@ -73,7 +75,7 @@ h1,.int-1{
     margin: 20px;
    font-weight: 500;
 }
-fieldset{
+#shelves,.b-4,.b-7{
     margin-top:30px ;
     border-radius: 15px;
     border: none;
@@ -96,7 +98,7 @@ fieldset{
     align-items: center;
     animation: fade-in linear ;
     animation-timeline: view();
-    animation-range:1px 500px;
+    animation-range:1px 300px;
 }
 .row-2{
     margin-left: 10px;
@@ -105,7 +107,7 @@ fieldset{
     align-items: center;
     animation: fade-in linear ;
     animation-timeline: view();
-    animation-range:1px 500px;
+    animation-range:1px 300px;
 
 }
 .row-3{
@@ -115,7 +117,11 @@ fieldset{
     align-items: center;
     animation: fade-in linear;
     animation-timeline: view();
-    animation-range:1px 500px;
+    animation-range:1px 300px;
+}
+@keyframes fade-in{
+    from{ scale: 0.8; opacity: 0;}
+    to{scale: 1;opacity: 1;}
 }
 .buy{
     margin-left:15px ;
@@ -176,6 +182,9 @@ footer a:hover{
 .authers{
     display: flex;
     margin: 5%;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 3px 3px 18px ;
 }
 .authers img{
     height: 250px;
@@ -194,9 +203,54 @@ footer a:hover{
     margin-top: 50px;
     font-size: xx-large;
 }
-@keyframes fade-in{
-    from{ scale: 0.8; opacity: 0;}
-    to{scale: 1;opacity: 1;}
+.about-us button{
+    margin-top: 40px;
+    padding: 10px;
+    background-color:aqua;
+    border-radius: 5px;
+    border: none;
+   font-size: 15px;
+}
+.about-us h2{
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+.about-us{
+    display: flex;
+    align-items: center;
+    margin: 5%;
+}
+.about-us img{
+    width: 60%;
+    height: 50%;
+    margin-right: 5%;
+}
+.media-scroller{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 17%;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+}
+.media-element{
+    padding: 15px;
+    margin-left: 30px;
+    background: rgba(207, 198, 198, 0.9);
+    border-radius: 10px;
+    text-align: center;
+    inline-size: 90%;
+}
+ .media-element > img{
+    inline-size: 100%;
+    border-radius: 10px;
+} 
+h3{
+    text-align: center;
+    margin: 30px 0px 50px 0px;
+    font-size: 30px;
+}
+::-webkit-scrollbar{
+    width: 12px;
 }
 @media screen and (max-width: 800px) {
    .introduction{
@@ -211,7 +265,6 @@ footer a:hover{
    }
    .row-1,.row-2,.row-3{
     margin-left: 0px;
-     
    }
    .row-1 img{
    width: 100px;
@@ -275,4 +328,18 @@ footer a:hover{
         -webkit-box-orient: vertical;
         overflow: hidden;       
     }
+    .about-us img{
+        width: 60%;
+        height: 50%;
+    }
+    .about-us h2{
+        font-size: 30px;
+    }
+    .about-us button{
+        font-size: 9px;
+    }
+    .about-us p{
+        font-size: 80%;
+    }
+    
   }
